@@ -1,0 +1,15 @@
+.banner{background: #3fa8e9;padding-bottom: 5%}
+.banner>p.h2{line-height: 40px;padding-top:8%;font-weight: 900;color: #fff;}
+.banner>p.h4{line-height: 30px;padding-bottom: 5%;color: #fff;}
+img.pull-left{margin-right: 20px}
+.banner>div.container>div{padding-top: 20px;}
+
+div.step{background: #f7f7f7;padding-top: 5%;padding-bottom: 40px}
+.step>.h2{font-weight: 900;color:#0077BF;line-height: 60px}
+.step>.h4{color: #0077BF;line-height: 36px;margin-bottom: 40px}
+
+.direction h2{text-indent: 1em;line-height: 80px}
+.direction .media{border-radius: 20px;background: #f7f7f7;display: inline-block;padding:20px 10px;width: 100%;margin-top: 20px}
+.direction .img{width: 40%;height: auto}
+.direction .text{width: 60%;height: auto}
+.direction .text p.h3{margin-top: 10%;font-weight: 900}
