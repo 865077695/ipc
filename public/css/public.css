@@ -1,0 +1,9 @@
+body{font-family: '微软雅黑',tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;}
+.rel{position: relative;}
+.abs{position: absolute;}
+.footer{padding-top: 20px;padding-bottom:20px;background: #eef2f5;}
+.footer dt{color: #0077bf;margin-bottom: 10px}
+.footer dd a,{color: #333;}
+#bs-example-navbar-collapse-1>ul>li>a{line-height:40px}
+.contact{background:#eef2f5;margin-top:30px}
+.bottom{color:#fff;background:#286ebb;line-height:40px;}

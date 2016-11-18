@@ -4,18 +4,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="author" content="Jophy" />
+	<meta name="author" content="zzq" />
 	<title>Kinzo—下载</title>
-	<link rel="shortcut icon" href="./images/index/favicon.ico">
-	<link rel="icon" href="./images/index/favicon.ico" sizes="16x16 32x32">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="shortcut icon" href="./source/images/index/favicon.ico">
+	<link rel="icon" href="./source/images/index/favicon.ico" sizes="16x16 32x32">
+	<link rel="stylesheet" href="./source/css/bootstrap.min.css">
 	<!--[if lte IE 9]>
-	<script src="js/respond.min.js"></script>
-	<script src="js/html5.js"></script>
+	<script src="./source/js/respond.min.js"></script>
+	<script src="./source/js/html5.js"></script>
 	<![endif]-->
-	<link rel="stylesheet" href="./css/public.css">
-	<link rel="stylesheet" href="./css/IPC_download.css">
+	<link rel="stylesheet" href="./source/css/public.css">
+	<link rel="stylesheet" href="./source/css/IPC_download.css">
+	<link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
 </head>
 <body>
 <!-- 顶部导航条 -->
@@ -28,27 +28,21 @@
 			    <span class="icon-bar"></span>
 			    <span class="icon-bar"></span>
 		    </button>	
-		    <a class="navbar-brand" href="index.html"><img class="img-responsive" alt="Kinzo" src="./images/index/logo.png"></a>
+		    <a class="navbar-brand" href="index.html"><img class="img-responsive" alt="Kinzo" src="./source/images/index/logo.png" width="90"></a>
 	    </div>
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a class="active" href="index.html">产品</a></li>
-				<li><a href="IPC_download.html" style="color:#1884c5">下载</a></li>
-				<li class="dropdown">
-		        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">在线帮助 <span class="caret"></span></a>
-		        	<ul class="dropdown-menu" role="menu">
-			            <li><a href="IPC_assistance.html">帮助中心</a></li>
-			            <li><a href="IPC_helpuser.html">常见问题</a></li>
-			        </ul>
-		        </li>
-				<li class="dropdown">
-		        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">在线订购 <span class="caret"></span></a>
-		        	<ul class="dropdown-menu" role="menu">
-			            <li><a href="yaotouji.html">摇头机</a></li>
-			            <li><a href="kapianji.html">卡片机</a></li>
-			        </ul>
-		        </li>
-			</ul>
+                <li><a href="index.html">产品</a></li>
+                <li><a href="IPC_download.html" style="color: #1884c5">下载</a></li>
+                <li><a href="IPC_assistance.html">在线帮助</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">在线订购 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="yaotouji.html">摇头机</a></li>
+                        <li><a href="kapianji.html">卡片机</a></li>
+                    </ul>
+                </li>
+            </ul>
 		</div>
 	</div>
 </nav>
@@ -58,10 +52,10 @@
 	<p class="h2 text-center">客户端支持多平台应用</p>
 	<p class="h4 text-center">定期优化升级，界面布局清晰，菜单功能流畅</p>
 	<div class="container">
-		<div class="col-sm-2 col-sm-offset-2 col-xs-4 col-xs-offset-2"><a href=""><img class="img-responsive" src="./images/download/iphone.png" alt="iphone下载"></a></div>
-		<div class="col-sm-2 col-xs-4"><a href=""><img class="img-responsive" src="./images/download/andioid.png" alt="andioid下载"></a></div>
-		<div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-2"><a href=""><img class="img-responsive" src="./images/download/mac.png" alt="MAC下载"></a></div>
-		<div class="col-sm-2 col-xs-4"><a href=""><img class="img-responsive" src="./images/download/windows.png" alt="Windows下载"></a></div>
+		<div class="pic-shadow col-sm-2 col-sm-offset-2 col-xs-4 col-xs-offset-2"><a class="iphone" href="./source/app/app.apk"><img class="img-responsive" src="./source/images/download/iphone.png" alt="iphone下载"></a></div>
+		<div class="pic-shadow col-sm-2 col-xs-4"><a href="./source/app/app.apk"><img class="img-responsive" src="./source/images/download/andioid.png" alt="andioid下载"></a></div>
+		<div class="pic-shadow col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-2"><a href="./source/app/app.apk"><img class="img-responsive" src="./source/images/download/mac.png" alt="MAC下载"></a></div>
+		<div class="pic-shadow col-sm-2 col-xs-4"><a href="./source/app/app.apk"><img class="img-responsive" src="./source/images/download/windows.png" alt="Windows下载"></a></div>
 	</div>
 </div>
 <!-- banner结束 -->
@@ -72,7 +66,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-8 col-sm-offset-2 col-xs-12">
-				<img src="./images/download/step.png" alt="步骤：1.接通电源，2.下载APP，3.点击连接。" class="img-responsive">
+				<img src="./source/images/download/step.png" alt="步骤：1.接通电源，2.下载APP，3.点击连接。" class="img-responsive">
 			</div>
 		</div>
 	</div>
@@ -80,11 +74,11 @@
 <!-- step结束 -->
 <!-- 产品使用说明说 -->
 <div class="container direction">
-	<h2 style="font-family:'方正兰亭黑';font-weight:700">产品使用说明书</h2>
+	<h2 style="font-weight:700">产品使用说明书</h2>
 	<div class="col-sm-6 col-xs-12">
 		<a href="" class="media">
 		   <div class="pull-left img">
-				<img src="./images/download/cloud.png" alt="云台网络操作手册下载" class="img-responsive">
+				<img src="./source/images/download/cloud.png" alt="云台网络操作手册下载" class="img-responsive">
 		   </div>
 		   <div class="pull-left text">
 		   		<p class="h3">云台网络监控摄像机</p>
@@ -95,7 +89,7 @@
 	<div class="col-sm-6 col-xs-12">
 		<a href="" class="media">
 		   <div class="pull-left img">
-				<img src="./images/download/inter.png" alt="网络监控操作手册下载" class="img-responsive">
+				<img src="./source/images/download/inter.png" alt="网络监控操作手册下载" class="img-responsive">
 		   </div>
 		   <div class="pull-left text">
 		   		<p class="h3">网络监控智能摄像机</p>
@@ -119,7 +113,7 @@
 			<div class="col-sm-3">
 				<dl>
 					<dt>关注我们</dt>
-					<dd><img src="./images/index/facebook.png" alt=""> &nbsp;<img src="./images/index/twiter.png" alt=""></dd>
+					<dd><img src="./source/images/index/facebook.png" alt=""> &nbsp;<img src="./source/images/index/twiter.png" alt=""></dd>
 				</dl>
 			</div>
 		</div>
@@ -128,8 +122,10 @@
 <div class="bottom text-center">
 	精湛光电&copy;2013-2016 360公司版权所有 京ICP备08010314号-43 京公网安备11000002000006号
 </div>
-	<script src="js/jquery1.11.3.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/public.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- cdn不稳定时加载服务器资源 -->
+    <script>window.jQuery || document.write('<script src="./source/js/jquery1.11.3.min.js"><\/script><script src="./source/js/bootstrap.min.js"><\/script>');</script>
+	<script src="./source/js/public.js"></script>
 </body>
 </html>

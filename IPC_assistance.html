@@ -1,124 +1,246 @@
 <!Doctype html>
 <html lang="zh-CN">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="author" content="Jophy" />
-	<title>Kinzo—帮助中心</title>
-	<link rel="shortcut icon" href="./images/index/favicon.ico">
-	<link rel="icon" href="./images/index/favicon.ico" sizes="16x16 32x32">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
-	<!--[if lte IE 9]>
-	<script src="js/respond.min.js"></script>
-	<script src="js/html5.js"></script>
-	<![endif]-->
-	<link rel="stylesheet" href="./css/public.css">
-	<link rel="stylesheet" href="./css/IPC_assistance.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="zzq" />
+    <title>Kinzo—帮助中心</title>
+    <link rel="shortcut icon" href="./source/images/index/favicon.ico">
+    <link rel="icon" href="./source/images/index/favicon.ico" sizes="16x16 32x32">
+    <link rel="stylesheet" href="./source/css/bootstrap.min.css">
+    <!--[if lte IE 9]>
+    <script src="source/js/respond.min.js"></script>
+    <script src="source/js/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="./source/css/public.css">
+    <link rel="stylesheet" href="./source/css/IPC_assistance.css">
 </head>
 <body>
 <!-- 顶部导航条 -->
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-	<div class="container">
-		<div class="navbar-header">
-		    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-			    <!-- <span class="sr-only">Toggle navigation</span> -->
-			    <span class="icon-bar"></span>
-			    <span class="icon-bar"></span>
-			    <span class="icon-bar"></span>
-		    </button>	
-		    <a class="navbar-brand" href="index.html"><img class="img-responsive" alt="Kinzo" src="./images/index/logo.png"></a>
-	    </div>
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a class="active" href="index.html">产品</a></li>
-				<li><a href="IPC_download.html">下载</a></li>
-				<li class="dropdown">
-		        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#1884c5">在线帮助 <span class="caret"></span></a>
-		        	<ul class="dropdown-menu" role="menu">
-			            <li><a href="IPC_assistance.html">帮助中心</a></li>
-			            <li><a href="IPC_helpuser.html">常见问题</a></li>
-			        </ul>
-		        </li>
-				<li class="dropdown">
-		        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">在线订购 <span class="caret"></span></a>
-		        	<ul class="dropdown-menu" role="menu">
-			            <li><a href="yaotouji.html">摇头机</a></li>
-			            <li><a href="kapianji.html">卡片机</a></li>
-			        </ul>
-		        </li>
-			</ul>
-		</div>
-	</div>
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>   
+            <a class="navbar-brand" href="index.html"><img class="img-responsive" alt="Kinzo" src="./source/images/index/logo.png" width="90"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">产品</a></li>
+                <li><a href="IPC_download.html">下载</a></li>
+                <li><a href="IPC_assistance.html" style="color:#1884c5">在线帮助</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">在线订购 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="yaotouji.html">摇头机</a></li>
+                        <li><a href="kapianji.html">卡片机</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
 <!-- 顶部导航条结束 -->
 
 <!-- 搜索框部分开始 -->
 <div class="bg-primary" style="margin-top:88px">
-	<div class="container">
-		<div class="row padding">
-			<div class="col-sm-5 col-sm-offset-7 form">
-		      	<input type="text" class="form-control" id="search" name="search" placeholder="请输入您所查找问题的关键字">
-		      	<a class=" btn-lg search">
-					<span class="glyphicon glyphicon-search"></span>
-				</a>
-		  	</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row padding">
+            <div class="col-sm-5 col-sm-offset-7 form">
+                <input type="text" class="form-control" id="search" name="search" placeholder="请输入您所查找问题的关键字">
+                <a class=" btn-lg search">
+                    <span class="glyphicon glyphicon-search"></span>
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- 搜索框部分结束 -->
 
 <!-- banner图片开始 -->
-<img src="./images/assistance/banner.png" alt="欢迎使用帮助中心" class="img-responsive">
+<img src="./source/images/assistance/banner.png" alt="欢迎使用帮助中心" class="img-responsive">
 
 <!-- 常见问题开始 -->
-<div class="container">
-	<div class="row self-help">
-		<p class="h3 text-indent">常见问题</p>
-		<a href="IPC_helpuser.html" class="box col-sm-3 col-xs-6"><img src="./images/assistance/account.png" alt="用户管理" class="img-responsive"></a>
-		<a href="IPC_helpuser.html" class="box col-sm-3 col-xs-6"><img src="./images/assistance/device.png" alt="设备管理" class="img-responsive"></a>
-		<a href="IPC_helpuser.html" class="box col-sm-3 col-xs-6"><img src="./images/assistance/ordering.png" alt="商品订购" class="img-responsive"></a>
-		<a href="IPC_helpuser.html" class="box col-sm-3 col-xs-6"><img src="./images/assistance/service.png" alt="售后服务" class="img-responsive"></a>
-	</div>
+<div class="container quest" style="margin-top: .5rem">
+    <h3>常见问题</h3>
+    <div class="row">
+        <div class="col-sm-3 col-xs-6 col-sm-offset-0 text-center">
+            <a href="IPC_helpuser.html">
+                <img class="img-responsive" src="./source/images/assistance/account.png" alt="">
+                <p>账户管理</p>
+            </a>
+        </div>
+        <div class="col-sm-3 col-xs-6 text-center">
+            <a href="IPC_helpuser.html">
+                <img class="img-responsive" src="./source/images/assistance/device.png" alt="">
+                <p>设备管理</p>
+            </a>
+        </div>
+        <div class="col-sm-3 col-xs-6 text-center col-sm-offset-0">
+            <a href="IPC_helpuser.html">
+                <img class="img-responsive" src="./source/images/assistance/ordering.png" alt="">
+                <p>商品订购</p>
+            </a>
+        </div>
+        <div class="col-sm-3 col-xs-6 text-center">
+            <a href="IPC_helpuser.html">
+                <img class="img-responsive" src="./source/images/assistance/service.png" alt="">
+                <p>售后服务</p>
+            </a>
+        </div>
+    </div>
 </div>
 <!-- 常见问题结束 -->
 
-<!-- 意见反馈开始 -->
-<div class="container">
-	<div class="row">
-		<p class="h3 text-indent">意见反馈</p>
-		<img src="./images/assistance/Feedback.png" alt="售后服务" class="img-responsive">
-	</div>
+<!-- 意见反馈 -->
+<div class="feedback container" style="margin-top: .5rem">
+    <h3 style="margin-bottom: 30px">意见反馈</h3>
+    <div class="row">
+        <div class="col-sm-6 col-xs-12" style="margin-top: 10px">
+            <a class="_model center-block" type="button" data-toggle="modal" data-target="#myModal">
+                <img class="pull-left" src="./source/images/assistance/email.png" alt="">
+                <div class="box pull-left">
+                    <p class="p1 text-primary">与kinzo联络</p>
+                    <p class="p2">为您解决遇到的问题</p>
+                </div>
+            </a>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h3 class="modal-title text-center" id="myModalLabel">发送信息给我们</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form role="form">
+                      <div class="form-group">
+                        <label for="name">您的名字</label><span class="error pull-right text-danger" style="color: #fb5252;"></span>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                      </div>
+                      <div class="form-group">
+                        <label for="phone">您的电话</label>
+                        <input type="number" class="form-control" id="phone" placeholder="Your Number">
+                      </div>
+                      <div class="form-group">
+                        <label for="feed">您所遇到的问题</label>
+                        <textarea type="textarea" class="form-control" id="feed" placeholder="Enter Your Problem"></textarea>
+                      </div>
+                    </form>
+                    <form class="form-inline" role="form">
+                        <div class="form-group">
+                            <label class="pull-left" for="verif_text">输入验证码&nbsp;&nbsp;</label>
+                            <input class="pull-left" type="text" id="verif_text" >
+                            <div class="pull-left"><img id="verif_img" src="../getCaptcha" alt="" style="width: 100px;height: 2em"></div>
+                            <span id="changeImg" style="padding-left: 10px;cursor: pointer;color: blue">换一张</span>
+                        </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">返回</button>
+                    <button id="sendMessage" type="button" class="btn btn-primary">提交</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12" style="margin-top: 10px">
+            <a href="tel:15036595297">
+                <img class="pull-left" src="./source/images/assistance/phone.png" alt="">
+                <div class="pull-left">
+                    <p class="p1" style="color:#333;">4000-400-899</p>
+                    <p class="p2"">周一至周日 8:00 至 18:00</p>
+                </div>
+            </a>
+        </div>
+    </div>
 </div>
 <!-- 意见反馈结束 -->
-
 <!-- 底部开始 -->
 <div class="contact">
-	<div class="container footer">
-		<div class="row">
-			<div class="col-sm-3 col-sm-offset-6">
-				<dl>
-					<dt>联系我们</dt>
-					<dd><a href="">关于我们</a></dd>
-					<dd>邮箱：Laser@chinakinzo.com</dd>
-					<dd>电话：4000-400-899</dd>
-				</dl>
-			</div>
-			<div class="col-sm-3">
-				<dl>
-					<dt>关注我们</dt>
-					<dd><img src="./images/index/facebook.png" alt=""> &nbsp;<img src="./images/index/twiter.png" alt=""></dd>
-				</dl>
-			</div>
-		</div>
-	</div>
+    <div class="container footer">
+        <div class="row">
+            <div class="col-sm-3 col-sm-offset-6">
+                <dl>
+                    <dt>联系我们</dt>
+                    <dd><a href="">关于我们</a></dd>
+                    <dd>邮箱：Laser@chinakinzo.com</dd>
+                    <dd>电话：4000-400-899</dd>
+                </dl>
+            </div>
+            <div class="col-sm-3">
+                <dl>
+                    <dt>关注我们</dt>
+                    <dd><img src="./source/images/index/facebook.png" alt=""> &nbsp;<img src="./source/images/index/twiter.png" alt=""></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="bottom text-center">
-	精湛光电&copy;2013-2016 360公司版权所有 京ICP备08010314号-43 京公网安备11000002000006号
+    精湛光电&copy;2013-2016 360公司版权所有 京ICP备08010314号-43 京公网安备11000002000006号
 </div>
-	<script src="js/jquery1.11.3.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/public.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- cdn不稳定时加载服务器资源 -->
+    <script>window.jQuery || document.write('<script src="./source/js/jquery1.11.3.min.js"><\/script><script src="./source/js/bootstrap.min.js"><\/script>');</script>
+    <script src="source/js/public.js"></script>
+        <script>
+        $(function(){
+            $("#verif_img").attr('src','../getCaptcha?t='+Math.random())
+            $('.quest a').hover(function(){
+                var idx = $(this).index();
+                var src = $(this).find('img').attr('src');
+                newSrc = src.slice(0,-4)+'_hover.png';
+                $(this).find('img').attr('src',newSrc);
+            },function(){
+                var idx = $(this).index();
+                var src = $(this).find('img').attr('src');
+                newSrc = src.slice(0,-10)+'.png';
+                $(this).find('img').attr('src',newSrc);
+            })
+            //重新加载图形验证码
+            $("#changeImg").click(function(){
+                $("#verif_img").attr('src','../getCaptcha?t='+Math.random())
+            });
+
+            $('.feedback').on('click','#sendMessage',function(){
+                var _name = $('#name').val(),_number = $('#phone').val(),_feed = $('#feed').val(),_verif_text=$('#verif_text').val();
+                if(_name && _number && _feed && _verif_text){
+                    var jsonStr = JSON.stringify({"guestName":_name,"contactDetails":_number,"captcha":_verif_text,"suggestion":_feed});
+                    $.ajax({  
+                        contentType:"application/json;charset=UTF-8",
+                        type:"POST",
+                        url:"product/suggestion",
+                        data:jsonStr,
+                        dataType:"json",
+                        success:function(data){
+                            // data={"statusCode":200,"buzCode":"0"}   
+                            if(data.statusCode == 200 && data.statusCode.buzCode == 0){
+                                alert('发送成功');
+                                $('.error').html(' ');
+                            }else if(data.statusCode == 200 && data.statusCode.buzCode == 40){
+                                $('.error').html('验证码错误');
+                            }else if(data.statusCode == 200 && (data.statusCode.buzCode == 30 || data.statusCode.buzCode == 31 || data.statusCode.buzCode == 32)){
+                                $('.error').html('内容不能为空');
+                            }else if(data.statusCode == 200 && data.statusCode.buzCode == 20 ){
+                                $('.error').html('名字过长')
+                            }else if(data.statusCode == 200 && data.statusCode.buzCode == 21 ){
+                                $('.error').html('联系方式格式错误')
+                            }else if(data.statusCode == 200 && data.statusCode.buzCode == 22 ){
+                                $('.error').html('建议内容超出最大长度')
+                            }
+                        }
+                    });
+                }else{
+                    $('.error').html('内容不能为空');
+                }
+            })
+        })
+    </script>
 </body>
 </html>
