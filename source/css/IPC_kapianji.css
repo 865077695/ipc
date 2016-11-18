@@ -1,0 +1,7 @@
+.kapian{top:30%;right:44%}
+.kapian>.kapian_1{font-size:.48rem;font-weight: 500}
+.kapian>.kapian_2{font-size:.24rem;font-weight: 500;margin-top: .1rem;margin-bottom: .25rem}
+.kapian>.kapian_3{font-size:.14rem;color:#1a6ac0;vertical-align: top}
+.kapian>.kapian_3>span{font-size:.5rem;}
+.kapian>.kapian_3>a{background:#1a6ac0;font-size:.14rem;color:#fff;padding:5px 10px;border-radius: 5px;margin-left: .3rem}
+.kapian>.kapian_3>a:hover{background:#0778f1;text-decoration: none;}
