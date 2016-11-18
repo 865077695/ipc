@@ -26,7 +26,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>   
-            <a class="navbar-brand" href="index.html"><img class="img-responsive" alt="Kinzo" src="./source/images/index/logo.png" width="90"></a>
+            <a class="navbar-brand" href="index.html"><img class="img-responsive" alt="Kinzo精湛" src="./source/images/index/logo.png" width="90"></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -34,7 +34,7 @@
                 <li><a href="IPC_download.html">下载</a></li>
                 <li><a href="IPC_assistance.html" style="color:#1884c5">在线帮助</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">在线订购 <span class="caret"></span></a>
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">在线订购 <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="yaotouji.html">摇头机</a></li>
                         <li><a href="kapianji.html">卡片机</a></li>
@@ -52,7 +52,7 @@
         <div class="row padding">
             <div class="col-sm-5 col-sm-offset-7 form">
                 <input type="text" class="form-control" id="search" name="search" placeholder="请输入您所查找问题的关键字">
-                <a class=" btn-lg search">
+                <a class="btn-lg search" href="IPC_helpuser.html">
                     <span class="glyphicon glyphicon-search"></span>
                 </a>
             </div>
@@ -62,7 +62,7 @@
 <!-- 搜索框部分结束 -->
 
 <!-- banner图片开始 -->
-<img src="./source/images/assistance/banner.png" alt="欢迎使用帮助中心" class="img-responsive">
+<img src="./source/images/assistance/banner.png" alt="kinzo 帮助中心" class="img-responsive">
 
 <!-- 常见问题开始 -->
 <div class="container quest" style="margin-top: .5rem">
@@ -70,25 +70,25 @@
     <div class="row">
         <div class="col-sm-3 col-xs-6 col-sm-offset-0 text-center">
             <a href="IPC_helpuser.html">
-                <img class="img-responsive" src="./source/images/assistance/account.png" alt="">
+                <img class="img-responsive" src="./source/images/assistance/account.png" alt="kinzo 账户管理">
                 <p>账户管理</p>
             </a>
         </div>
         <div class="col-sm-3 col-xs-6 text-center">
             <a href="IPC_helpuser.html">
-                <img class="img-responsive" src="./source/images/assistance/device.png" alt="">
+                <img class="img-responsive" src="./source/images/assistance/device.png" alt="kinzo 设备管理">
                 <p>设备管理</p>
             </a>
         </div>
         <div class="col-sm-3 col-xs-6 text-center col-sm-offset-0">
             <a href="IPC_helpuser.html">
-                <img class="img-responsive" src="./source/images/assistance/ordering.png" alt="">
+                <img class="img-responsive" src="./source/images/assistance/ordering.png" alt="kinzo 商品订购">
                 <p>商品订购</p>
             </a>
         </div>
         <div class="col-sm-3 col-xs-6 text-center">
             <a href="IPC_helpuser.html">
-                <img class="img-responsive" src="./source/images/assistance/service.png" alt="">
+                <img class="img-responsive" src="./source/images/assistance/service.png" alt="kinzo 售后服务">
                 <p>售后服务</p>
             </a>
         </div>
@@ -102,7 +102,7 @@
     <div class="row">
         <div class="col-sm-6 col-xs-12" style="margin-top: 10px">
             <a class="_model center-block" type="button" data-toggle="modal" data-target="#myModal">
-                <img class="pull-left" src="./source/images/assistance/email.png" alt="">
+                <img class="pull-left" src="./source/images/assistance/email.png" alt="意见反馈">
                 <div class="box pull-left">
                     <p class="p1 text-primary">与kinzo联络</p>
                     <p class="p2">为您解决遇到的问题</p>
@@ -120,22 +120,22 @@
                     <form role="form">
                       <div class="form-group">
                         <label for="name">您的名字</label><span class="error pull-right text-danger" style="color: #fb5252;"></span>
-                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        <input type="text" class="form-control" id="name" placeholder="您的名字">
                       </div>
                       <div class="form-group">
                         <label for="phone">您的电话</label>
-                        <input type="number" class="form-control" id="phone" placeholder="Your Number">
+                        <input type="type" class="form-control" id="phone" placeholder="您的电话">
                       </div>
                       <div class="form-group">
                         <label for="feed">您所遇到的问题</label>
-                        <textarea type="textarea" class="form-control" id="feed" placeholder="Enter Your Problem"></textarea>
+                        <textarea type="textarea" class="form-control" id="feed" placeholder="您遇到的问题"></textarea>
                       </div>
                     </form>
                     <form class="form-inline" role="form">
                         <div class="form-group">
                             <label class="pull-left" for="verif_text">输入验证码&nbsp;&nbsp;</label>
                             <input class="pull-left" type="text" id="verif_text" >
-                            <div class="pull-left"><img id="verif_img" src="../getCaptcha" alt="" style="width: 100px;height: 2em"></div>
+                            <div class="pull-left"><img id="verif_img" src="" alt="captcha" style="width: 100px;height: 2em"></div>
                             <span id="changeImg" style="padding-left: 10px;cursor: pointer;color: blue">换一张</span>
                         </div>
                     </form>
@@ -150,7 +150,7 @@
         </div>
         <div class="col-sm-6 col-xs-12" style="margin-top: 10px">
             <a href="tel:15036595297">
-                <img class="pull-left" src="./source/images/assistance/phone.png" alt="">
+                <img class="pull-left" src="./source/images/assistance/phone.png" alt="拨打电话">
                 <div class="pull-left">
                     <p class="p1" style="color:#333;">4000-400-899</p>
                     <p class="p2"">周一至周日 8:00 至 18:00</p>
@@ -167,7 +167,7 @@
             <div class="col-sm-3 col-sm-offset-6">
                 <dl>
                     <dt>联系我们</dt>
-                    <dd><a href="">关于我们</a></dd>
+                    <dd><a href="javascript:void(0)">关于我们</a></dd>
                     <dd>邮箱：Laser@chinakinzo.com</dd>
                     <dd>电话：4000-400-899</dd>
                 </dl>
@@ -175,7 +175,7 @@
             <div class="col-sm-3">
                 <dl>
                     <dt>关注我们</dt>
-                    <dd><img src="./source/images/index/facebook.png" alt=""> &nbsp;<img src="./source/images/index/twiter.png" alt=""></dd>
+                    <dd><img src="./source/images/index/facebook.png" alt="Facebook"> &nbsp;<img src="./source/images/index/twiter.png" alt="twiter"></dd>
                 </dl>
             </div>
         </div>
@@ -189,58 +189,6 @@
     <!-- cdn不稳定时加载服务器资源 -->
     <script>window.jQuery || document.write('<script src="./source/js/jquery1.11.3.min.js"><\/script><script src="./source/js/bootstrap.min.js"><\/script>');</script>
     <script src="source/js/public.js"></script>
-        <script>
-        $(function(){
-            $("#verif_img").attr('src','../getCaptcha?t='+Math.random())
-            $('.quest a').hover(function(){
-                var idx = $(this).index();
-                var src = $(this).find('img').attr('src');
-                newSrc = src.slice(0,-4)+'_hover.png';
-                $(this).find('img').attr('src',newSrc);
-            },function(){
-                var idx = $(this).index();
-                var src = $(this).find('img').attr('src');
-                newSrc = src.slice(0,-10)+'.png';
-                $(this).find('img').attr('src',newSrc);
-            })
-            //重新加载图形验证码
-            $("#changeImg").click(function(){
-                $("#verif_img").attr('src','../getCaptcha?t='+Math.random())
-            });
-
-            $('.feedback').on('click','#sendMessage',function(){
-                var _name = $('#name').val(),_number = $('#phone').val(),_feed = $('#feed').val(),_verif_text=$('#verif_text').val();
-                if(_name && _number && _feed && _verif_text){
-                    var jsonStr = JSON.stringify({"guestName":_name,"contactDetails":_number,"captcha":_verif_text,"suggestion":_feed});
-                    $.ajax({  
-                        contentType:"application/json;charset=UTF-8",
-                        type:"POST",
-                        url:"product/suggestion",
-                        data:jsonStr,
-                        dataType:"json",
-                        success:function(data){
-                            // data={"statusCode":200,"buzCode":"0"}   
-                            if(data.statusCode == 200 && data.statusCode.buzCode == 0){
-                                alert('发送成功');
-                                $('.error').html(' ');
-                            }else if(data.statusCode == 200 && data.statusCode.buzCode == 40){
-                                $('.error').html('验证码错误');
-                            }else if(data.statusCode == 200 && (data.statusCode.buzCode == 30 || data.statusCode.buzCode == 31 || data.statusCode.buzCode == 32)){
-                                $('.error').html('内容不能为空');
-                            }else if(data.statusCode == 200 && data.statusCode.buzCode == 20 ){
-                                $('.error').html('名字过长')
-                            }else if(data.statusCode == 200 && data.statusCode.buzCode == 21 ){
-                                $('.error').html('联系方式格式错误')
-                            }else if(data.statusCode == 200 && data.statusCode.buzCode == 22 ){
-                                $('.error').html('建议内容超出最大长度')
-                            }
-                        }
-                    });
-                }else{
-                    $('.error').html('内容不能为空');
-                }
-            })
-        })
-    </script>
+    <script src="source/js/IPC_assistance.js"></script>
 </body>
 </html>
