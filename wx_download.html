@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>点击下载应用</title>
+    <style type="text/css">
+    body{background: rgba(0,0,0,1)}
+    body{margin:0; padding:0;}
+    .mask{position: absolute;width: 100%;height: 100%;background: rgba(255,255,255,.15);display: none}
+    ol{margin-top: -50px}
+    ol>li{line-height: 50px;color: #ccc;}
+        span{padding:0 10px;background: #aaa}
+        button{ 
+            border:none;border-radius: 2px;
+            background: -webkit-linear-gradient(#666, #000); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(#666, #000); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(#666, #000); /* Firefox 3.6 - 15 */
+            background: linear-gradient(#666, #000); /* 标准的语法 */
+            color: #ccc;
+            padding:5px 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="mask">
+    <div style="overflow: hidden;">
+        <img src="source/images/index/arrow_t.png" alt="" style="float: right">
+    </div>
+    <ol>
+        <li>点击右上角的 <button disabled><img src="source/images/index/menu.png" alt="三点菜单"></button> 按钮</li>
+        <li>选择 <button disabled><img src="source/images/index/browser.png" alt=""> 在浏览器打开</button></li>
+    </ol>
+    
+</div>
+
+<script type="text/javascript">
+    var ua = navigator.userAgent.toLowerCase();
+    var isWeixin = ua.indexOf('micromessenger') != -1;
+    if (isWeixin) {
+        document.getElementsByClassName('mask')[0].style.display = 'block';
+    }
+</script>
+</body>
+</html>

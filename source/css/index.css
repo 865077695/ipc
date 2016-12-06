@@ -13,15 +13,16 @@
 .goods>.abs>p:nth-child(1){font-size:.56rem;}
 .goods>.abs>p:nth-child(2){font-size:.36rem}
 .goods>.abs>p:nth-child(3){font-size:.56rem;margin-top:.8rem}
-.goods>.abs>a{font-size:.36rem;}
+.goods>.abs>a{font-size:.32rem;}
 }
 .kapian{top:30%;right:44%}
 @media screen and (min-width: 768px) and (max-width: 2000px) {  /*pc*/
 .goods>.abs>p:nth-child(1){font-size:.28rem}
 .goods>.abs>p:nth-child(2){font-size:.18rem}
 .goods>.abs>p:nth-child(3){font-size:.28rem;margin-top:.4rem}
-.goods>.abs>a{font-size:.18rem;}
+.goods>.abs>a{font-size:.14rem;}
 }
+.goods>img{border-radius:10px}
 .goods>.abs>p:nth-child(3){margin-top:.4rem}
 .goods>.abs>a{background:#1a6ac0;color:#fff;padding:5px 10px;border-radius:5px;}
 .goods>.abs>a:hover{text-decoration:none;background:#0778f1;}

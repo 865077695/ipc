@@ -21,7 +21,10 @@ $(function(){
         $("#verif_img").attr('src','/kinzo-product/getCaptcha?t='+Math.random())
     });
     $('.feedback').on('click','#sendMessage',function(){
-        var _name = $('#name').val();var _number = $('#phone').val();var _feed = $('#feed').val();var _verif_text=$('#verif_text').val();
+        var _name = $('#name').val();
+        var _number = $('#phone').val();
+        var _feed = $('#feed').val();
+        var _verif_text=$('#verif_text').val();
         if( _name && _number && _feed && _verif_text ){
             var jsonStr = JSON.stringify({"guestName":_name,"contactDetails":_number,"captcha":_verif_text,"suggestion":_feed});
             $.ajax({

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>手机APP下载页面：根据终端切换下载地址</title>
+    <style type="text/css">
+        .android,.iphone{display: none}
+    </style>
+</head>
+<body>
+<a class="android" href="http://download.k2o.me/ipcs/android/kinzoIPC.lastest.apk">Android</a>
+<a class="iphone" href="https://itunes.apple.com/cn/app/kinzo-she-xiang-ji/id1172730607?mt=8">iPhone</a>
+<script type="text/javascript">
+    // 获取终端的相关信息
+    var Terminal = {
+        // 辨别移动终端类型
+        platform : function(){
+            var u = navigator.userAgent, app = navigator.appVersion;
+            return {
+                // android终端或者uc浏览器
+                android: u.indexOf('Android') > -1 && u.indexOf('Linux') > -1,
+                // 是否为iPhone或者QQHD浏览器
+                iPhone: u.indexOf('iPhone') > -1
+            };
+        }(),
+        // 显示对应平台链接
+        show : function(node){
+                   return node.style.display = 'block';
+               }
+    }
+    var _android = document.getElementsByClassName('android')[0];
+    var androidUrl = _android.href;
+    var _iphone = document.getElementsByClassName('iphone')[0];
+    var iphoneUrl = _iphone.href;
+    //判断终端，跳转或显示对应版本
+    if(Terminal.platform.android){
+        //获取安卓下载地址
+        Terminal.show(_android);
+        window.location.href = androidUrl;
+    }else if(Terminal.platform.iPhone){
+        //获取iPhone下载地址
+        Terminal.show(_iphone);
+        window.location.href = iphoneUrl;
+    }else{
+        //未知平台，自选
+        Terminal.show(_android);
+        Terminal.show(_iphone);
+    }
+</script>
+</body>
+</html>

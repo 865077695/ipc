@@ -16,8 +16,34 @@
 	<link rel="stylesheet" href="./source/css/public.css">
 	<link rel="stylesheet" href="./source/css/IPC_download.css">
 	<link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+	<style>
+    .mask{position: fixed;z-index:99999;top:0;left:0;bottom:0;right:0;background: rgba(0,0,0,.85);display: none;}
+    ol{margin-top: -50px}
+    ol>li{line-height: 40px;color: #ccc;}
+    ol span{padding:0 10px;background: #aaa}
+    ol button{ line-height: 0;
+            border:none;border-radius: 2px;
+            background: -webkit-linear-gradient(#666, #000); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(#666, #000); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(#666, #000); /* Firefox 3.6 - 15 */
+            background: linear-gradient(#666, #000); /* 标准的语法 */
+            color: #ccc;
+            padding:5px 5px;
+        }
+	</style>
 </head>
 <body>
+<!-- 微信打开下载遮罩层 -->
+<div class="mask">
+    <div style="overflow: hidden;">
+        <img src="source/images/index/arrow_t.png" alt="" style="float: right">
+    </div>
+    <ol>
+        <li>点击右上角的 <button disabled><img src="source/images/index/menu.png" alt="三点菜单"></button> 按钮</li>
+        <li>选择 <button disabled><img src="source/images/index/browser.png" alt=""> 在浏览器打开</button></li>
+    </ol>
+    
+</div>
 <!-- 顶部导航条 -->
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	<div class="container">
@@ -52,10 +78,10 @@
 	<p class="h2 text-center">客户端支持多平台应用</p>
 	<p class="h4 text-center">定期优化升级，界面布局清晰，菜单功能流畅</p>
 	<div class="container">
-		<div class="pic-shadow col-sm-2 col-sm-offset-2 col-xs-4 col-xs-offset-2"><a class="iphone" href="./source/app/app.apk"><img class="img-responsive" src="./source/images/download/iphone.png" alt="iphone下载"></a></div>
-		<div class="pic-shadow col-sm-2 col-xs-4"><a href="./source/app/app.apk"><img class="img-responsive" src="./source/images/download/andioid.png" alt="andioid下载"></a></div>
-		<div class="pic-shadow col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-2"><a href="./source/app/app.apk"><img class="img-responsive" src="./source/images/download/mac.png" alt="MAC下载"></a></div>
-		<div class="pic-shadow col-sm-2 col-xs-4"><a href="./source/app/app.apk"><img class="img-responsive" src="./source/images/download/windows.png" alt="Windows下载"></a></div>
+		<div class="pic-shadow col-sm-2 col-sm-offset-2 col-xs-4 col-xs-offset-2"><a class="iphone" href="https://itunes.apple.com/cn/app/kinzo-she-xiang-ji/id1172730607?mt=8"><img class="img-responsive" src="./source/images/download/iphone.png" alt="iphone下载"></a></div>
+		<div class="pic-shadow col-sm-2 col-xs-4"><a href="http://download.k2o.me/ipcs/android/kinzoIPC.lastest.apk"><img class="img-responsive" src="./source/images/download/andioid.png" alt="andioid下载"></a></div>
+		<div class="pic-shadow col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-2"><a href="javascript:void(0)"><img class="img-responsive" src="./source/images/download/mac.png" alt="MAC下载"></a></div>
+		<div class="pic-shadow col-sm-2 col-xs-4"><a href="javascript:void(0)"><img class="img-responsive" src="./source/images/download/windows.png" alt="Windows下载"></a></div>
 	</div>
 </div>
 <!-- banner结束 -->
@@ -126,6 +152,19 @@
     <script src="https://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <!-- cdn不稳定时加载服务器资源 -->
     <script>window.jQuery || document.write('<script src="./source/js/jquery1.11.3.min.js"><\/script><script src="./source/js/bootstrap.min.js"><\/script>');</script>
+	<script>
+	    $(function(){
+			var ua = navigator.userAgent.toLowerCase();
+		    var isWeixin = ua.indexOf('micromessenger') != -1;
+		    if(isWeixin){
+		    	$('.banner a').attr('href','javascript:void(0)');
+		    	$('.banner a').on('click',function(){
+			        $('.mask').show();
+		    	});
+		    };
+	    	$('.mask').on('click',function(){$('.mask').hide()})
+		})
+	</script>
 	<script src="./source/js/public.js"></script>
 </body>
 </html>
